@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false">
+        <activity
+            android:name="com.example.networktoolkit.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.networktoolkit.WebTestActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.NetworkInfoActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.TracerouteActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.LanScannerActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.PingHistoryActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.speedtest.SpeedTestActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.DnsLookupActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.SubnetCalculatorActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.NetworkNotesActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.iperf3.IPerf3Activity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.wifiscan.WifiScannerActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.signalmap.SignalMapperActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.networktoolkit.learning.LearningGuideActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

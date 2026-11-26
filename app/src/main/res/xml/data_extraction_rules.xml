@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="database" path="." />
+        <exclude domain="database" path="network_toolkit_database" />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="sharedpref" path="SignalMapSurveyStore.xml" />
+        <exclude domain="sharedpref" path="SpeedTestPrefs.xml" />
+        <exclude domain="sharedpref" path="saf_staged_exports_prefs.xml" />
+        <exclude domain="sharedpref" path="ToolkitSettings.xml" />
+        <exclude domain="file" path="staged_txt_exports" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="database" path="." />
+        <exclude domain="database" path="network_toolkit_database" />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="sharedpref" path="SignalMapSurveyStore.xml" />
+        <exclude domain="sharedpref" path="SpeedTestPrefs.xml" />
+        <exclude domain="sharedpref" path="saf_staged_exports_prefs.xml" />
+        <exclude domain="sharedpref" path="ToolkitSettings.xml" />
+        <exclude domain="file" path="staged_txt_exports" />
+    </device-transfer>
+</data-extraction-rules>

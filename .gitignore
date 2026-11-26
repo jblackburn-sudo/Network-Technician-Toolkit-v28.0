@@ -1,0 +1,61 @@
+# Gradle & Kotlin
+.gradle/
+.kotlin/
+**/build/
+
+# Local Android SDK & environment properties
+local.properties
+/local.properties
+.env
+.env.*
+
+# IDE metadata
+*.iml
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Native & capture outputs
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Build outputs & release artifacts
+.build-outputs/
+*.apk
+*.ap_
+*.aab
+app/release/
+**/outputs/
+
+# Keystores, signing configs & credentials
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+debug.keystore
+debug.keystore.base64
+keystore.properties
+signing.properties
+google-services.json
+
+# Logs, temporary files & archives
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Private AI Studio workspace artifacts
+.aistudio/
+metadata.json
